@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBackRetrofitRxJavaClick"
+            android:padding="15dp"
+            android:text="back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+            android:text="Retrofit with RxJava" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onGetRetrofitRxJavaClick"
+        android:text="Get" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onNoFitRetrofitRxJavaClick"
+        android:text="网络请求轮询（无条件）" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onFitRetrofitRxJavaClick"
+        android:text="网络请求轮询（有条件）"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onNestRetrofitRxJavaClick"
+        android:text="网络请求嵌套回调"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onReConnectRetrofitRxJavaClick"
+        android:text="网络请求出错重连"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDefServerRetrofitRxJavaClick"
+        android:text="合并数据源,统一显示(如数据源来自2个服务器)"/>
+
+    <TextView
+        android:id="@+id/retrofit_rxjava_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/retrofit_rxjava_result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
