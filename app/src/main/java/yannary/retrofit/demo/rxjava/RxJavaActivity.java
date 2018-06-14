@@ -17,6 +17,7 @@ import yannary.retrofit.demo.R;
  */
 
 public class RxJavaActivity extends BaseActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
